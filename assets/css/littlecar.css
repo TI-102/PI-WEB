@@ -1,0 +1,301 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family:'Montserrat', Arial, Helvetica, sans-serif;
+    font-size:13px;
+    overflow-x:hidden;
+}
+main h2 {
+    margin-bottom: 8px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.purchases {
+    padding-top: 5px;
+    max-width: 800px;
+    min-width: 300px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 12px 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0px auto 10vh;
+}
+.item {
+    max-height: min-content;
+    min-height: 17vh;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    min-width: 341.04px;
+    font-weight: 700;
+}
+.item-image {
+    width: 25%;
+    height: 23vh;
+    margin-right: 5px;
+    background-image: url(../images/file_fritas.jpg);
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+.item-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    height: 9vh;
+    width: 75%;
+}
+.item-info .titulo {
+    margin-top: -3vh;
+}
+.order {
+    width: 50%;
+    align-self: flex-end;
+    background-color: rgba(59, 207, 0, 0.667);
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+    padding: 1vh 0px;
+    margin: 1vh 1vh 1vh 0px;
+}
+.item-value {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.quant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-left: 20vh;
+    margin-bottom: 30px;
+    max-width: 55%;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.button-sub {
+    background-color: rgb(236, 105, 105);
+}
+.button-add {
+    background-color: rgb(145, 240, 108);
+}
+.button-sub, .button-add {
+    width: 8vh;
+    height: 8vh;
+    font-size: 18px;
+    max-height: 31.37px;
+    max-width: 31.37px;
+    border-radius: 50%;
+}
+.total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+.total h3 {
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 5px;
+}
+.total span {
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 130px;
+}
+.finalizar {
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(59, 207, 0);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 4px 0px;
+}
+@media (min-width:300px) and (max-width:800px) {
+main{
+    margin:0px 5px 40px 5px;
+}
+main h2 {
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+.purchases {
+    max-width: 800px;
+    min-width: 300px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 12px 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.item {
+    margin-top: 3vh;
+    background-image: url(../images/file_fritas.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    margin-bottom: 3vh;
+}
+.item-image {
+    display:none;
+}
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    height: 9vh;
+    width: 100%;
+}
+.titulo {
+    background-color: rgba(238, 238, 238, 0.733);
+    width: fit-content;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 0px 4px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(34, 34, 34);
+    border-image: initial;
+}
+.order {
+    width: 50%;
+    align-self: flex-end;
+    background-color: rgba(59, 207, 0, 0.867);
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+    padding: 1vh 0px;
+    margin: 1vh 1vh 1vh 0px;
+}
+.item-value {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 8vh;
+    height: 10vh;
+}
+.item-value span {
+    background-color: rgba(238, 238, 238, 0.733);
+    width: fit-content;
+    font-weight: 700;
+    font-size: 23px;
+    align-self: center;
+    padding: 0px 4px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(34, 34, 34);
+    border-image: initial;
+}
+.quant {
+    display: flex;
+    background-color: rgba(238, 238, 238, 0.733);
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin-left: 5vh;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #444;
+    border-image: initial;
+}
+.quant h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.button-sub, .button-add {
+    width: 4vh;
+    height: 4vh;
+    font-size: 18px;
+    max-height: 31.37px;
+    max-width: 31.37px;
+    border-radius: 50%;
+}
+.button-sub {
+    background-color: rgb(236, 105, 105);
+}
+.button-add {
+    background-color: rgb(145, 240, 108);
+}
+
+.total {
+    padding-top: 1vh;
+    margin-top: 4vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    border-top: 1px solid black;
+}
+.total span {
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 5px;
+}
+.total h3 {
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 5px;
+}
+.finalizar {
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #3bcf00;
+    padding: 4px 0px 4px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.quant span {
+    background-color: rgba(238, 238, 238, 0.733);
+    width: fit-content;
+    font-weight: 700;
+    align-self: center;
+    padding: 0px 4px;
+    border-radius: 5px;
+}
+}
