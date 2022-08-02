@@ -12,6 +12,7 @@ main h2 {
     margin-bottom: 8px;
     margin-top: 5px;
     text-align: center;
+    font-size: 1.4rem;
 }
 
 .purchases {
@@ -43,11 +44,18 @@ main h2 {
     width: 25%;
     height: 23vh;
     margin-right: 5px;
-    background-image: url(../images/file_fritas.jpg);
+
+    
+}
+.item-image img{
+    max-height: 100%;
+    max-width: 100%;
+    height:100%;
+    width:auto;
+    object-fit:cover ;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
-    background-position-y: 50%;
-    background-position-x: 50%;
+
 }
 .item-info {
     display: flex;
@@ -62,7 +70,7 @@ main h2 {
 .order {
     width: 50%;
     align-self: flex-end;
-    background-color: rgba(59, 207, 0, 0.667);
+    background-color: #ff2c00;
     font-weight: 700;
     font-size: 16px;
     border-radius: 9px;
@@ -84,46 +92,59 @@ main h2 {
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-left: 20vh;
+    margin-right: 1.5vw;
     margin-bottom: 30px;
     max-width: 55%;
 }
-h4 {
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.quant div{
+    height:100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.quant span{
+    font-size: 1.5rem;
+    height: 100%;
+    display: flex;
+    align-items: CENTER;
+    padding-right:0.5vw;
+    padding-left: 0.5vw;
+}
+.button-sub, .button-add{
+    font-size: 1.7em;
+    width:7vw;
 }
 .button-sub {
-    background-color: rgb(236, 105, 105);
+background-color: #7775;
+height:100%;
+border-radius: 0;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
 }
 .button-add {
-    background-color: rgb(145, 240, 108);
-}
-.button-sub, .button-add {
-    width: 8vh;
-    height: 8vh;
-    font-size: 18px;
-    max-height: 31.37px;
-    max-width: 31.37px;
-    border-radius: 50%;
+    background-color: #7775;
+    height:100%;
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .total {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding:1vh;
     border-top: 1px solid rgb(0, 0, 0);
 }
 .total h3 {
     font-weight: 600;
-    font-size: 17px;
+    font-size: 20px;
     margin-left: 5px;
 }
 .total span {
     font-weight: 600;
-    font-size: 17px;
-    margin-right: 130px;
+    font-size: 20px;
+    margin-right: 100px;
 }
 .finalizar {
     font-size: 18px;
@@ -131,7 +152,7 @@ h4 {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(59, 207, 0);
+    background-color: #ff2c00;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 4px 0px;
@@ -157,23 +178,28 @@ main h2 {
 }
 .item {
     margin-top: 3vh;
-    background-image: url(../images/file_fritas.jpg);
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
     margin-bottom: 3vh;
 }
 .item-image {
-    display:none;
+    display:block;
+    position: absolute;
+    width: 45vw;
+    height: 18vh;
+}
+.item-image img{
+    object-fit:cover;
+    width: auto;
+    height: 100%;
 }
 .item-info {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: 18px;
     height: 9vh;
     width: 100%;
+    margin-bottom: 3vh;
 }
 .titulo {
     background-color: rgba(238, 238, 238, 0.733);
@@ -190,7 +216,7 @@ main h2 {
 .order {
     width: 50%;
     align-self: flex-end;
-    background-color: rgba(59, 207, 0, 0.867);
+    background-color: #ff2c00;
     font-size: larger;
     font-weight: 600;
     border-radius: 9px;
@@ -206,65 +232,77 @@ main h2 {
     justify-content: space-between;
     flex-wrap: nowrap;
     width: 100%;
-    margin-bottom: 8vh;
+    margin-bottom: 1vh;
     height: 10vh;
 }
 .item-value span {
     background-color: rgba(238, 238, 238, 0.733);
     width: fit-content;
     font-weight: 700;
-    font-size: 23px;
+    font-size: 20px;
     align-self: center;
-    padding: 0px 4px;
+    height:7vh;
+    padding: 0px 2px;
     border-radius: 5px;
-    border-width: 1px;
+    border-width:1px;
     border-style: solid;
     border-color: rgb(34, 34, 34);
     border-image: initial;
+}
+.value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .quant {
     display: flex;
     background-color: rgba(238, 238, 238, 0.733);
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 60%;
-    margin-left: 5vh;
-    margin-bottom: 3px;
+    flex-wrap: nowrap;
+    height:6vh;
+    max-width: 65%;
+    margin-left: 1vw;
+    margin-right: 4vw;
+    margin-bottom:1vh;
+}
+.quant div{
+    display: flex;
+    align-items: center;
     border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #444;
-    border-image: initial;
+    border:1px #000a solid;
+
 }
-.quant h4 {
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.quant div span{
+    height:100%;
+    display: flex;
+    border-radius: 0px;
+    border: #ffff;
+    align-items: center;
 }
-.button-sub, .button-add {
-    width: 4vh;
-    height: 4vh;
-    font-size: 18px;
-    max-height: 31.37px;
-    max-width: 31.37px;
-    border-radius: 50%;
+.button-sub, .button-add{
+    font-size: 1.7em;
+    width:15vw;
 }
 .button-sub {
-    background-color: rgb(236, 105, 105);
+    height:100%;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .button-add {
-    background-color: rgb(145, 240, 108);
+    height:100%;
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
 }
 
 .total {
-    padding-top: 1vh;
-    margin-top: 4vh;
+    margin-top: 3vh;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 8px;
     border-top: 1px solid black;
@@ -285,17 +323,10 @@ main h2 {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #3bcf00;
+    background-color: #ff2c00;
     padding: 4px 0px 4px 0px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.quant span {
-    background-color: rgba(238, 238, 238, 0.733);
-    width: fit-content;
-    font-weight: 700;
-    align-self: center;
-    padding: 0px 4px;
-    border-radius: 5px;
-}
+
 }
