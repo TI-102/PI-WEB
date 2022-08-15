@@ -3,6 +3,14 @@
     padding:0;
     box-sizing:border-box;
 }
+.oi{
+    height: 70px;
+    background-image: url(/assets/images/Prancheta\ 1.png);
+    background-size:cover;
+    background-position:bottom;
+    overflow:hidden;
+    background-attachment: fixed;
+}
 body {
     font-family:'Montserrat', Arial, Helvetica, sans-serif;
     font-size:13px;
@@ -10,8 +18,8 @@ body {
 }
 header {
     height:100px;
-    background-color:rgba(0, 0, 0, 0.926);
     color:#FFF;
+    background-color:rgba(0, 0, 0, 0.926);
 }
 .header {
     max-width:1140px;
@@ -42,8 +50,7 @@ header {
     display:flex;
     justify-content: flex-end;
 }
-.menu ul,
-.menu li {
+.menu ul, .menu li {
     list-style:none;
 }
 .menu ul {
@@ -61,8 +68,7 @@ header {
     align-items:center;
     border-bottom:5px solid #000;
 }
-.menu li a:hover,
-.menu .active a {
+.menu li a:hover, .menu .active a {
     border-bottom:5px solid #ff2c00;
     color:#CCC;
 }
@@ -97,7 +103,7 @@ header {
 .banner {
     height:calc(100vh - 100px);
     background-color:#333;
-    background-image:url('../images/bg.jpg');
+    background-image:url('../assets/images/bg.jpg');
     background-size:cover;
     background-position:bottom;
     overflow:hidden;
@@ -115,7 +121,7 @@ header {
 }
 
 .boxsomb{
-    background-color:rgba(0, 0, 0, 0.8);
+    background-color:rgba(0, 0, 0, 0.382);
     justify-content: center;
     display: flex
 }

@@ -6,7 +6,10 @@
 body {
     font-family:'Montserrat', Arial, Helvetica, sans-serif;
     font-size:13px;
-    overflow-x:hidden;   
+    overflow-x:hidden;
+}
+.mycar-title{
+    color: white;
 }
 
 main h2 {
@@ -18,7 +21,7 @@ main h2 {
 
 .purchases {
     padding-top: 5px;
-    max-width: 800px;
+    max-width: 900px;
     min-width: 300px;
     height: fit-content;
     display: flex;
@@ -30,6 +33,8 @@ main h2 {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin: 0px auto 10vh;
+    background-color: rgba(0, 0, 0, 0.926);
+    color: white;
 }
 .item {
     max-height: min-content;
@@ -45,18 +50,18 @@ main h2 {
     width: 25%;
     height: 23vh;
     margin-right: 5px;
-
+    display: flex;
+    justify-content: center;
     
 }
 .item-image img{
     max-height: 100%;
     max-width: 100%;
     height:100%;
-    width:auto;
+    width:100%;
     object-fit:cover ;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
-
 }
 .item-info {
     display: flex;
@@ -157,11 +162,10 @@ border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 4px 0px;
+    color: #000;
 }
 @media (min-width:300px) and (max-width:800px) {
-main{
-    margin:0px 5px 40px 5px;
-}
+
 main h2 {
     margin-bottom: 8px;
     margin-top: 5px;
@@ -176,6 +180,7 @@ main h2 {
     box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 12px 1px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    
 }
 .item {
     margin-top: 3vh;
@@ -186,11 +191,14 @@ main h2 {
     position: absolute;
     width: 45vw;
     height: 18vh;
+    display: flex;
+    justify-content: center;
 }
 .item-image img{
     object-fit:cover;
     width: auto;
     height: 100%;
+    width:100%;
 }
 .item-info {
     position: relative;
@@ -211,6 +219,7 @@ main h2 {
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
+    color: #000;
     border-color: rgb(34, 34, 34);
     border-image: initial;
 }
@@ -239,6 +248,7 @@ main h2 {
 .item-value span {
     background-color: rgba(238, 238, 238, 0.733);
     width: fit-content;
+    color: #000;
     font-weight: 700;
     font-size: 20px;
     align-self: center;
@@ -278,8 +288,12 @@ main h2 {
     height:100%;
     display: flex;
     border-radius: 0px;
+    display: flex;
+    justify-content: center;
     border: #ffff;
+    color: #000;
     align-items: center;
+    min-width: 6vw;
 }
 .button-sub, .button-add{
     font-size: 1.7em;

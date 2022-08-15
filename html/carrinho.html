@@ -4,40 +4,42 @@
     <meta charset="UTF-8" />
     <title>Awax</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="assets/css/partials.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/littlecar.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/css/partials.css" />
+    <link rel="stylesheet" type="text/css" href="/css/littlecar.css" />
 </head>
 <body>
     <header>
         <div class="header">
             <div class="logo">
                 <div class="logoimg">
-                    <img class="qr" src="assets/images/LOGO.png"/>
+                    <img class="qr" src="/assets/images/LOGO.png"/>
                 </div>
             </div>
             <div class="menu">
-                    <img class="menu-opener" src="assets/images/menu.png">
+                    <img class="menu-opener" src="/assets/images/menu.png">
                 <nav>
                     <ul>
                         <li><a href="home.html">Pagina Inicial</a></li>
-                        <li><a href="">Nossa História</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">localização</a></li>
-                        <li><a href="carrinho.html"><img class="carrinho" src="assets/images/carrinho.png"/></a></li>
+                        <li><a href="historia.html">Nossa História</a></li>
+                        <li><a href="index.html">Menu</a></li>
+                        <li class="active"><a href="carrinho.html"><img class="carrinho" src="/assets/images/carrinho.png"/></a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+
     <main>
-    
+        <section class="banner">
+            <div class="slide">
         <h2 class="mycar-title">Meu Carrinho</h2>
         <div class="purchases">
             <div class="item" data-key="1">
-                <div class="item-image"><img src="./assets/images/bife_parmegiana.jpg"></div>
+                <div class="item-image"><img src="/assets/images/bife_parmegiana.jpg"></div>
                 <div class="item-info">
                     <span class="titulo">Bife à Parmegiana</span>
-                    <button class="order">Pedir</button>
+                    <button class="order">Remover</button>
                     <div class="item-value">
                         <span class="value">R$ 35,25</span>
                         <div class="quant"><div><button class="button-add">+</button><span>1</span><button class="button-sub">-</button></div></div> 
@@ -49,7 +51,7 @@
                 <div class="item-image"><img src="/assets/images/file_fritas.jpg"></div>
                 <div class="item-info">
                     <span class="titulo">Filé com Fritas</span>
-                    <button class="order">Pedir</button>
+                    <button class="order">Remover</button>
                     <div class="item-value">
                         <span class="value">R$ 34,75</span>
                         <div class="quant"><div><button class="button-add">+</button><span>1</span><button class="button-sub">-</button></div></div> 
@@ -58,13 +60,13 @@
             </div>
 
             <div class="item" data-key="3">
-                <div class="item-image"><img src="./assets/images/carbonara.jpg"></div>
+                <div class="item-image"><img src="/assets/images/carbonara.jpg"></div>
                 <div class="item-info">
                     <span class="titulo">Macarrão Carbonara</span>
-                    <button class="order">Pedir</button>
+                    <button class="order">Remover</button>
                     <div class="item-value">
                         <span class="value">R$ 31,45</span>
-                        <div class="quant"><div><button class="button-add">+</button><span>1</span><button class="button-sub">-</button></div></div> 
+                        <div class="quant"><div><button class="button-add">+</button><span>2</span><button class="button-sub">-</button></div></div> 
                     </div>
                 </div>
             </div>
@@ -77,16 +79,17 @@
                     Finalizar Pedido
                 </div>
         </div>
+    </section>
     </main>
     <footer>
         <div class="footer--area">
             <div class="footer--item area1">
                 <div class="footer-social">
-                    <a href=""><img src="assets/images/twitter.png"></a>
-                    <a href=""><img src="assets/images/linkedin.png"></a>
-                    <a href=""><img src="assets/images/facebook.png"></a>
-                    <a href=""><img src="assets/images/googleplus.png"></a>
-                    <a href=""><img src="assets/images/pinterest.png"></a>
+                    <a href=""><img src="/assets/images/twitter.png"></a>
+                    <a href=""><img src="/assets/images/linkedin.png"></a>
+                    <a href=""><img src="/assets/images/facebook.png"></a>
+                    <a href=""><img src="/assets/images/googleplus.png"></a>
+                    <a href=""><img src="/assets/images/pinterest.png"></a>
                 </div>
             </div>
             <div class="footer--item area2">
@@ -101,6 +104,7 @@
         </div>
     </footer>
    
-    <script src="carrinho.js"></script>
+    <script src="/scripts/carrinho.js"></script>
+</div>
     </body>
 </html>
