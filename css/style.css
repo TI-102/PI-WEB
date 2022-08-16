@@ -69,7 +69,7 @@ header {
     border-bottom:5px solid #000;
 }
 .menu li a:hover, .menu .active a {
-    border-bottom:5px solid #ff2c00;
+    border-bottom:5px solid #B28756;
     color:#CCC;
 }
 
@@ -329,7 +329,7 @@ footer {
     .menu li a {
         font-weight:bold;
         height:80px;
-        font-size:27px;
+        font-size:17px;
         margin-left:50px;
         border:0;
     }
@@ -361,7 +361,7 @@ footer {
           
     }
 
-@media (max-width:450px) {
+@media (min-width:300px) and (max-width:800px) {
     .logo {
         margin-left:30px;
     }
@@ -387,8 +387,8 @@ footer {
 
     .menu li a {
         font-weight:bold;
-        height:60px;
-        font-size:20px;
+        height:80px;
+        font-size:17px;
         margin-left:30px;
         border:0;
     }

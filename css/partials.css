@@ -92,7 +92,7 @@ nav{
 }
 
 .menu li a:hover, .menu .active a {
-    border-bottom:5px solid #ff2c00;
+    border-bottom:5px solid #B28756;
     color:#CCC;
 }
 footer {
@@ -177,13 +177,13 @@ footer {
     .menu li a {
         font-weight:bold;
         height:80px;
-        font-size:27px;
+        font-size:17px;
         margin-left:50px;
         border:0;
     }
     .menu li.active a {
         border:0;
-        color:#ff2c00;
+        color:#B28756;
     }
     .footer--area {
         flex-direction:column;
